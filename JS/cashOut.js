@@ -6,8 +6,20 @@ document
     const cashOutAmount = getInputValueById("cash-out-input");
     const pinNumber = getInputValueById("cash-out-pin");
 
+    // Checking if it is a number
+    if(isNaN(cashOutAmount)){
+        alert('Failed to Cash Out');
+        return;
+    }
+
+    // Not the right way
     if (pinNumber === 1234) {
       const balance = getTextFieldValueById("account-balance");
+
+      if(cashOutAmount > balance){
+        alert('Insufficiant Balance');
+        return;
+      }
 
       const newBalance = balance - cashOutAmount;
 

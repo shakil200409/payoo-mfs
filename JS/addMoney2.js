@@ -5,6 +5,11 @@ document.getElementById('btn-add-money')
     const pinNumber = getInputValueById('pin-number-input');
     
 
+    // Checking if it is a number
+    if(isNaN(addMoney)){
+        alert('Failed to add money');
+        return;
+    }
     
     // Verification of pin number, Wrong way
     if(pinNumber === 1234){
