@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Functional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- Balance part -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Balance</div>
+                <div class="stat-value">89400</div>
+              </div>
+            </div>
+            <!-- End -->
+            <div class="divider"></div>
+
+            <!-- Features part -->
+            <div>
+              <button class="btn btn-lg">Add Money</button>
+              <button class="btn btn-lg">Cash Out</button>
+            </div>
+
+            <!-- End -->
+            <div class="divider"></div>
+
+            <!-- Add money form -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Add Money Amount</span>
+                    </label>
+                    <input type="text" placeholder="Amount" class="input input-bordered" id="add-money-input" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input type="password" placeholder="Pin Number" class="input input-bordered" id="pin-number-input" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary" id="btn-add-money">Add Money</button>
+                  </div>
+                </form>
+              </div>
+              <!-- End -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="JS/utilities.js"></script>
+    <script src="JS/add-money.js"></script>
+  </body>
+</html>
