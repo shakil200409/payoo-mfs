@@ -5,6 +5,7 @@ document.getElementById('btn-add-money')
     const pinNumber = getInputValueById('pin-number-input');
     
 
+    
     // Verification of pin number, Wrong way
     if(pinNumber === 1234){
         const balance = getTextFieldValueById('account-balance');
