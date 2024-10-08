@@ -11,6 +11,12 @@ document.getElementById('btn-cash-out')
         const newBalance = balance - cashOutAmount;
 
         document.getElementById('account-balance').innerText = newBalance;
+
+        // Adding history 
+        const p = document.createElement('p');
+        p.innerText = `Withdraw: ${cashOutAmount}Tk. New Balance: ${newBalance}`;
+
+        document.getElementById('transactions-container').appendChild(p);
     }
     else{
         alert('Something went wrong, please try again later');
